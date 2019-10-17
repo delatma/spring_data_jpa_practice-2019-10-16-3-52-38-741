@@ -1,5 +1,8 @@
 package com.tw.apistackbase.entity;
 
+import com.tw.apistackbase.repositories.CriminalCaseRepo;
+import com.tw.apistackbase.repositories.CriminalElementRepo;
+import com.tw.apistackbase.repositories.ProcuratorateRepo;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
