@@ -17,7 +17,6 @@ plugins {
     id "org.flywaydb.flyway" version "6.0.6"
 }
 
-
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
@@ -33,9 +32,8 @@ repositories {
     mavenCentral()
 }
 
-
 flyway {
-    url = 'jdbc:h2:file:/.target/court'
+    url = 'jdbc:h2:file:./target/court'
     user = 'sa'
 }
 
@@ -44,6 +42,10 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
     compile 'com.h2database:h2'
+//    compile 'org.flywaydb:flyway-core'
+//    compile 'org.springframework.boot:spring-boot-starter-jdbc'
+ //   compile 'org.springframework.boot:spring-boot-starter-web'
+//    compile('mysql:mysql-connector-java')
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 
